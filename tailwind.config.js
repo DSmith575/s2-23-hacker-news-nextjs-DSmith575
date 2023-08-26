@@ -24,6 +24,7 @@ module.exports = {
         teaRose: '#DEBAC0',
         munsell: '#348AA7',
         biceBlue: '#006DAA',
+        mint: '#36F1CD',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

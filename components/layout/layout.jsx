@@ -1,9 +1,9 @@
-// import NavBar
+import NavBar from '@/components/navigation/navBar.jsx';
 
 const Layout = ({ children }) => {
   return (
     <>
-      {/* NavBar */}
+      <NavBar />
       <main>{children}</main>
     </>
   );
