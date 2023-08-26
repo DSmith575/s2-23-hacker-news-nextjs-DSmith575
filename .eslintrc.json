@@ -1,3 +1,36 @@
 {
-  "extends": "next/core-web-vitals"
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+
+	"plugins": ["jest"],
+	"extends": [
+		"next",
+		"prettier",
+		"plugin:testing-library/react",
+		"plugin:jest-dom/recommended"
+	],
+
+	"rules": {
+		"quotes": [
+			2,
+			"single",
+			{ "avoidEscape": true, "allowTemplateLiterals": true }
+		],
+		"no-multiple-empty-lines": "warn",
+		"no-multi-spaces": "warn",
+		"no-mixed-spaces-and-tabs": "warn",
+		"no-extra-parens": "warn",
+		"no-trailing-spaces": "warn",
+		"no-unused-vars": "warn",
+		"consistent-return": "warn",
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"js": "always"
+			}
+		]
+	}
 }
