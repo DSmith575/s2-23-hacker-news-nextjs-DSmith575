@@ -1,5 +1,6 @@
 import '@/styles/globals.css';
 import { Roboto_Mono } from 'next/font/google';
+import Layout from '@/components/layout/layout.jsx';
 
 const roboto = Roboto_Mono({
   weight: '200',
@@ -10,7 +11,9 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <main className={roboto.className}>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </main>
     </>
   );
