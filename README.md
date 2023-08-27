@@ -22,7 +22,7 @@ const instance = axios.create({
 [Eslint Documentation for lint rules](https://eslint.org/docs/latest/)  
 [Tailwind docs for css style guides](https://tailwindcss.com/docs/installation)
 
-[https://react-icons.github.io/react-icons/](React Icons)
+[React Icons](https://react-icons.github.io/react-icons/)
 
-[https://markdownlivepreview.com/](Markdown live preview for writing README)  
-[https://www.w3schools.com/](HTML Tags)
+[Markdown live preview for writing README](https://markdownlivepreview.com/)  
+[HTML Tags](https://www.w3schools.com/)
