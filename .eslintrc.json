@@ -24,7 +24,7 @@
     "no-multiple-empty-lines": "warn",
     "no-multi-spaces": "warn",
     "no-mixed-spaces-and-tabs": "warn",
-    "no-extra-parens": "warn",
+    "no-extra-parens": "off",
     "no-trailing-spaces": "warn",
     "no-unused-vars": "warn",
     "consistent-return": "warn",
