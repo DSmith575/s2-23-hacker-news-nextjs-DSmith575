@@ -3,7 +3,7 @@ import NavButton from '@/components/navigation/navButton.jsx';
 const NavList = () => {
   return (
     <>
-      <ul className={'flex flex-row sm:invisible md:visible'}>
+      <ul className={`flex flex-col relative`}>
         <li>
           <NavButton
             route={'askStories'}
