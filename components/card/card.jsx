@@ -41,6 +41,25 @@ const Card = ({ story }) => {
             ''
           )}
         </ul>
+
+        {/* Returns story links if API returns any urls */}
+        {story.url ? (
+          <>
+            <div className={'mt-5 ring rounded text-center'}>
+              <h1 className={'font-bold text-center pb-5'}>Story Link</h1>
+              <Link
+                className={
+                  'text-greenBlueColor font-bold hover:text-oldRose hover:underline'
+                }
+                href={story.url}
+                target={'_blank'}>
+                {story.url}
+              </Link>
+            </div>
+          </>
+        ) : (
+          ''
+        )}
         <div className={'mt-5 text-center ring rounded'}>
           <h1 className={'font-bold text-center pb-5'}>Sub Stories</h1>
           {/* Returns related stories from api.kids slices and returns the first 5 */}
@@ -60,24 +79,6 @@ const Card = ({ story }) => {
             <li>No external links</li>
           )}
         </div>
-        {/* Returns story links if API returns any urls */}
-        {story.url ? (
-          <>
-            <div className={'mt-5 ring rounded text-center'}>
-              <h1 className={'font-bold text-center pb-5'}>Story Link</h1>
-              <Link
-                className={
-                  'text-greenBlueColor font-bold hover:text-oldRose hover:underline'
-                }
-                href={story.url}
-                target={'_blank'}>
-                {story.url}
-              </Link>
-            </div>
-          </>
-        ) : (
-          ''
-        )}
       </div>
     </>
   );

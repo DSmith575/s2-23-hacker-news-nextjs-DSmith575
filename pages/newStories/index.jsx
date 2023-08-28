@@ -2,18 +2,18 @@ import axios from 'axios';
 import Grid from '@/components/storyLayout/grid.jsx';
 import MetaTag from '@/components/metaTag/metaTag.jsx';
 
-const JobStories = ({ jobStories }) => {
+const NewStories = ({ newStories }) => {
   return (
     <>
-      <MetaTag pageTitle={'Job Stories'} />
-      <Grid story={jobStories} refPage={'jobStories'} />
+      <MetaTag pageTitle={'Best Stories'} />
+      <Grid story={newStories} refPage={'newStories'} />
     </>
   );
 };
 
 export const getServerSideProps = async () => {
   const api =
-    'https://hacker-news.firebaseio.com/v0/jobstories.json?orderBy="$priority"&limitToFirst=40&print=pretty';
+    'https://hacker-news.firebaseio.com/v0/newstories.json?orderBy="$priority"&limitToFirst=40&print=pretty';
   try {
     const response = await axios.get(api);
     const storyIds = response.data;
@@ -27,7 +27,7 @@ export const getServerSideProps = async () => {
     const stories = results.map((result) => result.data);
     return {
       props: {
-        jobStories: stories,
+        newStories: stories,
       },
     };
   } catch (err) {
@@ -40,4 +40,4 @@ export const getServerSideProps = async () => {
   }
 };
 
-export default JobStories;
+export default NewStories;
