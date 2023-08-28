@@ -20,7 +20,7 @@ const instance = axios.create({
 [JSdoc Documentation](https://jsdoc.app/)  
 [Prettier Documentation for code styling](https://prettier.io/docs/en/)  
 [Eslint Documentation for lint rules](https://eslint.org/docs/latest/)  
-[Tailwind docs for css style guides](https://tailwindcss.com/docs/installation)
+[Tailwind docs for css styling](https://tailwindcss.com/docs/installation)
 
 [React Icons](https://react-icons.github.io/react-icons/)
 

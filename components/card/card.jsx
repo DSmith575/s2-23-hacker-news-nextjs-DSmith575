@@ -1,0 +1,75 @@
+import Link from 'next/link';
+
+const convertTime = (timeStamp) => {
+  let date = new Date(timeStamp * 1000);
+  const todayDate = new Date(Date.now());
+  date = todayDate - date;
+
+  return date;
+  // returnValue
+};
+
+const Card = ({ story }) => {
+  return (
+    <>
+      <div
+        className={
+          'block max-w-2xl p-12 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100'
+        }>
+        <ul className={''}>
+          <li className={'font-bold'}>{story.title}</li>
+          <li>
+            <span className={'font-bold'}>Type: </span> {story.type}
+          </li>
+          <li className={''}>
+            <span className={'font-bold'}>Poster: </span>
+            {story.by}
+          </li>
+          <li>
+            <span className={'font-bold'}>Time: </span>
+            {convertTime(story.time)}
+          </li>
+          <li>
+            <span className={'font-bold'}>Score:</span> {story.score}
+          </li>
+          <li>{story.text}</li>
+        </ul>
+        <ul className={''}>
+          <h className={'border border-stone-900'}>Related</h>
+          {/* Returns related stories from api.kids slices and returns the first 5 */}
+          {story.kids ? (
+            story.kids.slice(0, 5).map((index) => (
+              <Link
+                className={
+                  'flex flex-col font-semibold hover:font-extrabold hover:text-greenBlueColor'
+                }
+                key={index}
+                href={`https://hacker-news.firebaseio.com/v0/item/${index}.json?print=pretty`}
+                target={'_blank'}>
+                {`https://hacker-news.firebaseio.com/v0/item/${index}.json?print=pretty`}
+              </Link>
+            ))
+          ) : (
+            <li>No external links</li>
+          )}
+
+          {/* Returns story links if API returns any urls */}
+          {story.url ? (
+            <>
+              <div className={'border border-stone-900 mx-auto '}>
+                <h1>Story Link</h1>
+                <Link href={story.url} target={'_blank'}>
+                  URL
+                </Link>
+              </div>
+            </>
+          ) : (
+            ''
+          )}
+        </ul>
+      </div>
+    </>
+  );
+};
+
+export default Card;

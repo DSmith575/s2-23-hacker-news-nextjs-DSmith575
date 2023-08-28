@@ -3,9 +3,10 @@
  * @author Deacon Smith
  *
  * @component
- * @description UL list containing NavButton components for the navbar component
+ * @description List containing NavButton components for the navbar component
  *
  * @param {Array} - Tuple containing menuOpen boolean & toggle function
+ * @param {ul/lu} - un-ordered list containing navButton links
  * @returns {JSX.Element} - Component for dropdown routing links
  *
  * @created 27-08-2023
@@ -18,7 +19,7 @@ const NavList = () => {
   return (
     <>
       <ul
-        className={`bg-white md:bg-inherit rounded ml-4 flex flex-col z-50 md:flex-row`}>
+        className={`bg-white  rounded ml-4 flex flex-col z-50 md:flex-row md:bg-inherit `}>
         <li>
           <NavButton
             route={'askStories'}

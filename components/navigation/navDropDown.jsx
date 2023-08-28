@@ -26,11 +26,9 @@ const NavDropDown = () => {
   };
   return (
     <>
-      <div
-        className={'text-grimace absolute top-0 left-0'}
-        onClick={toggleMenu}>
+      <div className={'text-black relative'} onClick={toggleMenu}>
         <GiHamburgerMenu size={40} />
-        <div className={'z-50'} onClick={toggleMenu}>
+        <div className={''} onClick={toggleMenu}>
           {menuOpen && (
             <>
               <NavButton route={'/'} text={'Home'} color={'text-sky-400'} />

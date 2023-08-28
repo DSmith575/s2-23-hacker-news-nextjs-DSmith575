@@ -19,7 +19,7 @@ import NavDropDown from '@/components/navigation/navDropDown.jsx';
 const NavBar = () => {
   return (
     <>
-      <nav className={'px-2 py-2 w-full'}>
+      <nav className={'px-2 py-2 block'}>
         <div className={'visible sm:visible md:invisible'}>
           <NavDropDown />
         </div>
