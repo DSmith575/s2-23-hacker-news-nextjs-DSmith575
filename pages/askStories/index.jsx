@@ -16,18 +16,14 @@ export const getServerSideProps = async () => {
     'https://hacker-news.firebaseio.com/v0/askstories.json?orderBy="$priority"&limitToFirst=40&print=pretty';
   try {
     const response = await axios.get(api);
-    if (response.ok === false) {
-      throw new Error('Response Error: ' + response.text);
-    }
-
-    const storyIds = response.data;
-
-    const promises = storyIds.map((id) =>
+    // Taking the data from response (IDs) and mapping them in a new array of html links
+    const promises = response.data.map((id) =>
       axios.get(
         `https://hacker-news.firebaseio.com/v0/item/${id}/.json?print=pretty`,
       ),
     );
     const results = await Promise.all(promises);
+    // making api calls to each link and then mapping that data, to display card titles etc
     const stories = results.map((result) => result.data);
     return {
       props: {

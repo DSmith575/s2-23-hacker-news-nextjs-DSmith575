@@ -14,7 +14,7 @@ const Card = ({ story }) => {
     <>
       <div
         className={
-          'block max-w-2xl p-12 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100'
+          'w-[85%] md:w-[55%] mx-auto p-12 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100'
         }>
         <ul className={''}>
           <li className={'font-bold'}>{story.title}</li>
@@ -41,7 +41,7 @@ const Card = ({ story }) => {
             story.kids.slice(0, 5).map((index) => (
               <Link
                 className={
-                  'flex flex-col font-semibold hover:font-extrabold hover:text-greenBlueColor'
+                  'text-greenBlueColor flex flex-col font-semibold hover:font-extrabold hover:text-greenBlueColor'
                 }
                 key={index}
                 href={`https://hacker-news.firebaseio.com/v0/item/${index}.json?print=pretty`}

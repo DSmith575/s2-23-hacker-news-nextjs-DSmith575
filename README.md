@@ -26,3 +26,5 @@ const instance = axios.create({
 
 [Markdown live preview for writing README](https://markdownlivepreview.com/)  
 [HTML Tags](https://www.w3schools.com/)
+
+[Hacker News Api LimitToFirst](https://www.elliotsachs.com/how-to-limit-the-number-of-stories-returned-by-the-hacker-news-api/)

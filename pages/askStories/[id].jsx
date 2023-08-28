@@ -18,10 +18,6 @@ export const getServerSideProps = async (context) => {
   try {
     const response = await axios.get(api);
 
-    if (response.ok === false) {
-      throw new Error('Response Error: ' + response.text);
-    }
-
     return {
       props: {
         story: response.data,

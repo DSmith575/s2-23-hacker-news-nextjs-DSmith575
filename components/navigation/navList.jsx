@@ -22,7 +22,7 @@ const NavList = () => {
         className={`bg-white  rounded ml-4 flex flex-col z-50 md:flex-row md:bg-inherit `}>
         <li>
           <NavButton
-            route={'askStories'}
+            route={'/askStories'}
             text={'Ask Stories'}
             color={'text-sky-400'}
             hover={true}
