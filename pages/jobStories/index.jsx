@@ -1,7 +1,6 @@
-import axios from 'axios';
-import instance from '@/api/axios/instances';
 import Grid from '@/components/storyLayout/grid.jsx';
 import MetaTag from '@/components/metaTag/metaTag.jsx';
+import ApiRequest from '@/api/apiRequest.js';
 
 const JobStories = ({ jobStories }) => {
   return (
@@ -14,25 +13,17 @@ const JobStories = ({ jobStories }) => {
 
 export const getServerSideProps = async () => {
   try {
-    const response = await instance.get('jobstories.json?')
+    const stories = await ApiRequest('jobstories.json?');
 
-    const storyIds = response.data;
-
-    const promises = storyIds.map((id) =>
-    instance.get(`item/${id}.json?`),
-    );
-    const results = await Promise.all(promises);
-    const stories = results.map((result) => result.data);
     return {
       props: {
         jobStories: stories,
       },
     };
   } catch (err) {
-    console.log(err);
     return {
       props: {
-        story: null,
+        story: [],
       },
     };
   }

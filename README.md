@@ -1,17 +1,9 @@
 # Axios Instance
 
-```js
-const instance = axios.create({
-  baseURL: 'https://some-domain.com/api/',
-  timeout: 1000,
-  headers: { 'X-Custom-Header': 'foobar' },
-});
-```
-
 ## env Setup
 
 ```js
-
+npm run envSetup
 ```
 
 ## References
@@ -21,6 +13,8 @@ const instance = axios.create({
 [Prettier Documentation for code styling](https://prettier.io/docs/en/)  
 [Eslint Documentation for lint rules](https://eslint.org/docs/latest/)  
 [Tailwind docs for css styling](https://tailwindcss.com/docs/installation)
+Axios Instance  
+Axios instance params
 
 [React Icons](https://react-icons.github.io/react-icons/)
 

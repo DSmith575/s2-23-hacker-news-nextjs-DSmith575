@@ -12,7 +12,8 @@
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "envSetup": "bash ./scripts/envSetup.sh"
   },
   "dependencies": {
     "autoprefixer": "10.4.15",
