@@ -14,7 +14,6 @@ const JobStories = ({ jobStories }) => {
 export const getServerSideProps = async () => {
   try {
     const stories = await ApiRequest('jobstories.json?');
-
     return {
       props: {
         jobStories: stories,
