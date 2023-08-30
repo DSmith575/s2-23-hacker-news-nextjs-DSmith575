@@ -14,7 +14,7 @@ const Card = ({ story }) => {
     <>
       <div
         className={
-          'w-[85%] md:w-[55%] mx-auto p-12 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100'
+          'w-[85%] md:w-[55%] mx-auto p-12 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 gap'
         }>
         <ul className={''}>
           <li className={'font-bold text-center'}>{story.title}</li>

@@ -12,7 +12,7 @@ const Grid = ({ story, refPage }) => {
             <li key={value.id}>
               <div
                 className={
-                  'mt-4 mx-auto shadow-2xl group border border-greenBlueColor w-[75%] h-20 flex justify-center items-center ring-2 ring-greenBlueColor rounded-md hover:bg-white'
+                  'mt-4 mx-auto shadow-3xl group border border-greenBlueColor w-[75%] h-20 flex justify-center items-center ring-2 ring-greenBlueColor rounded-md hover:bg-white'
                 }>
                 <Link
                   className={
