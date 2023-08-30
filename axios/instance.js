@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const HACKER_NEWS_URL = process.env.HACKER_NEWS_URL;
 
-const instance = axios.create({
+export const instance = axios.create({
   baseURL: HACKER_NEWS_URL,
   params: {
     print: 'pretty',
@@ -11,4 +11,9 @@ const instance = axios.create({
   },
 });
 
-export default instance;
+export const singleStoryInstance = axios.create({
+  baseURL: HACKER_NEWS_URL,
+  params: {
+    print: 'pretty',
+  },
+});

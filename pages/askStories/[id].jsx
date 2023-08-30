@@ -1,8 +1,8 @@
 import Card from '@/components/card/card.jsx';
-import axios from 'axios';
 import MetaTag from '@/components/metaTag/metaTag.jsx';
+import GetStory from '@/api/getStory.js';
 
-const BestStoryPage = ({ story }) => {
+const AskStoryPage = ({ story }) => {
   return (
     <>
       <MetaTag pageTitle={story.title} />
@@ -12,25 +12,22 @@ const BestStoryPage = ({ story }) => {
 };
 
 export const getServerSideProps = async (context) => {
-  const id = context.params.id;
-
-  const api = `https://hacker-news.firebaseio.com/v0/item/${id}/.json?print=pretty`;
   try {
-    const response = await axios.get(api);
-
+    const id = context.params.id;
+    const story = await GetStory(`item/${id}/.json?`);
     return {
       props: {
-        story: response.data,
+        story: story,
       },
     };
   } catch (err) {
     console.log(err);
     return {
       props: {
-        story: null,
+        story: [],
       },
     };
   }
 };
 
-export default BestStoryPage;
+export default AskStoryPage;

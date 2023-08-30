@@ -1,4 +1,4 @@
-import instance from '@/axios/instance';
+import { instance } from '@/axios/instance.js';
 
 const ApiRequest = async (endPoint) => {
   try {
@@ -11,6 +11,7 @@ const ApiRequest = async (endPoint) => {
     const results = await Promise.all(promises);
 
     const stories = results.map((result) => result.data);
+    console.log(stories);
 
     return stories;
   } catch (err) {
