@@ -1,14 +1,21 @@
 import ApiRequest from '@/api/apiRequest.js';
+import MetaTag from '@/components/metaTag/metaTag.jsx';
+import Grid from '@/components/storyLayout/grid.jsx';
 
-const Index = ({ title }) => {
+const Stories = ({ title, stories }) => {
   // get the title from params
-  return <h1>{title}</h1>;
+  return (
+    <>
+      <MetaTag pageTitle={title} />
+      <Grid story={stories} refPage={`story/${title}`} />
+    </>
+  );
 };
 
 export const getServerSideProps = async (context) => {
   try {
     const title = context.params.title;
-    const stories = await ApiRequest(`${title}stories.json?`);
+    const stories = await ApiRequest(`${title}.json?`);
 
     return {
       props: {
@@ -25,4 +32,4 @@ export const getServerSideProps = async (context) => {
   }
 };
 
-export default Index;
+export default Stories;

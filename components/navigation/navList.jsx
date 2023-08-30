@@ -22,7 +22,7 @@ const NavList = () => {
         className={`bg-white  rounded ml-4 flex flex-col z-50 md:flex-row md:bg-inherit `}>
         <li>
           <NavButton
-            route={'/askStories'}
+            route={'/story/askstories'}
             text={'Ask Stories'}
             color={'text-sky-400'}
             hover={true}
@@ -30,7 +30,7 @@ const NavList = () => {
         </li>
         <li>
           <NavButton
-            route={'/bestStories'}
+            route={'/story/beststories'}
             text={'Best Stories'}
             color={'text-sky-400'}
             hover={true}
@@ -38,7 +38,7 @@ const NavList = () => {
         </li>
         <li>
           <NavButton
-            route={'/jobStories'}
+            route={'/story/jobstories'}
             text={'Job Stories'}
             color={'text-sky-400'}
             hover={true}
@@ -46,7 +46,7 @@ const NavList = () => {
         </li>
         <li>
           <NavButton
-            route={'/newStories'}
+            route={'/story/newstories'}
             text={'New Stories'}
             color={'text-sky-400'}
             hover={true}
@@ -54,7 +54,7 @@ const NavList = () => {
         </li>
         <li>
           <NavButton
-            route={'/showStories'}
+            route={'/story/showstories'}
             text={'Show Stories'}
             color={'text-sky-400'}
             hover={true}
@@ -62,7 +62,7 @@ const NavList = () => {
         </li>
         <li>
           <NavButton
-            route={'/topStories'}
+            route={'/story/topstories'}
             text={'Top Stories'}
             color={'text-sky-400'}
             hover={true}

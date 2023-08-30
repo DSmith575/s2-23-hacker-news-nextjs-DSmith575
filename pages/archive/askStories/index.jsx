@@ -14,6 +14,7 @@ const AskStories = ({ askStories }) => {
 export const getServerSideProps = async () => {
   try {
     const stories = await ApiRequest('askstories.json?');
+    console.log(stories);
     return {
       props: {
         askStories: stories,
