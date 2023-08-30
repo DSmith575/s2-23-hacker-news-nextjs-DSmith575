@@ -19,7 +19,24 @@ const NavList = () => {
   return (
     <>
       <ul
-        className={`bg-white  rounded ml-4 flex flex-col z-50 md:flex-row md:bg-inherit `}>
+        className={`bg-slate-200 rounded-md ring mx-4 flex flex-col z-50 md:flex-row md:bg-inherit text-center`}>
+        {/* block md:hidden lg:hidden xl:hidden */}
+        <li className={''}>
+          <NavButton
+            route={'/'}
+            text={'Home'}
+            color={'text-sky-400'}
+            hover={true}
+          />
+        </li>
+        <li>
+          <NavButton
+            route={'/'}
+            text={'Leaders'}
+            color={'text-sky-400'}
+            hover={true}
+          />
+        </li>
         <li>
           <NavButton
             route={'/story/askstories'}

@@ -17,10 +17,10 @@ npm run envSetup
 [NextJS [slug] [id]](https://nextjs.org/docs/pages/building-your-application/routing/dynamic-routes#catch-all-segments)  
 [Slug - Grayson]()
 
-[JSdoc Documentation](https://jsdoc.app/)  
+[JSdoc Documentation](https://jsdoc.app/)
 
 [Prettier Documentation for code styling](https://prettier.io/docs/en/)  
-[Eslint Documentation for lint rules](https://eslint.org/docs/latest/)  
+[Eslint Documentation for lint rules](https://eslint.org/docs/latest/)
 
 [Tailwind docs for css styling](https://tailwindcss.com/docs/installation)
 

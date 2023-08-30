@@ -3,7 +3,6 @@ import MetaTag from '@/components/metaTag/metaTag.jsx';
 import Grid from '@/components/storyLayout/grid.jsx';
 
 const Stories = ({ title, stories }) => {
-  // get the title from params
   return (
     <>
       <MetaTag pageTitle={title} />

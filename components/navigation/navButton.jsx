@@ -26,9 +26,7 @@ const NavButton = ({ route, text, color, hover }) => {
         <div
           className={`text-md lg:text-lg font-bold px-4 py-2 ${color}
             ${
-              hover
-                ? `hover:bg-oldRose hover:text-white hover:rounded hover:underline hover:decoration-2 hover:decoration-wavy`
-                : ''
+              hover ? `hover:bg-blush hover:text-white hover:rounded block` : ''
             }
             `}>
           {text}

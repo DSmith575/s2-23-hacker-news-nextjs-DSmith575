@@ -25,9 +25,9 @@ const NavBar = () => {
         </div>
         <div
           className={
-            'flex sm:justify-start md:justify-center xl:justify-between'
+            'hidden md:flex sm:justify-start md:justify-center xl:justify-between collapse:'
           }>
-          <div className={'invisible sm:invisible md:visible'}>
+          <div className={'hidden sm:hidden md:hidden lg:hidden xl:block'}>
             <NavButton
               route={'/'}
               text={'Hacker News'}

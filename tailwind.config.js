@@ -28,7 +28,7 @@ module.exports = {
         mint: '#36F1CD',
       },
       boxShadow: {
-        '3xl': '-20px -20px 30px -15px rgba(0, 0, 0, 0.9)',
+        '3xl': '-20px -20px 20px -15px rgba(0, 0, 0, 0.3)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

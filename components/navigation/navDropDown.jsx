@@ -16,26 +16,22 @@
 import NavList from '@/components/navigation/navList.jsx';
 import { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import NavButton from '@/components/navigation/navButton.jsx';
 
 const NavDropDown = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [clicked, setClicked] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+  const toggleDropDown = () => {
+    setClicked(!clicked);
   };
   return (
     <>
-      <div className={'text-black relative'} onClick={toggleMenu}>
+      <div class={'block md:hidden'} onClick={toggleDropDown}>
         <GiHamburgerMenu size={40} />
-        <div className={''} onClick={toggleMenu}>
-          {menuOpen && (
-            <>
-              <NavButton route={'/'} text={'Home'} color={'text-sky-400'} />
-              <NavList />
-            </>
-          )}
-        </div>
+        {clicked && (
+          <div className={'my-4'}>
+            <NavList />
+          </div>
+        )}
       </div>
     </>
   );
