@@ -1,4 +1,4 @@
-import Card from '@/components/card/card.jsx';
+import Card from '@/components/card/storyCard.jsx';
 import MetaTag from '@/components/metaTag/metaTag.jsx';
 import GetStory from '@/utils/api/getStory.js';
 

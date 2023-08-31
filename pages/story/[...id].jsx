@@ -1,5 +1,5 @@
 import MetaTag from '@/components/metaTag/metaTag.jsx';
-import Card from '@/components/card/card.jsx';
+import StoryCard from '@/components/card/storyCard.jsx';
 import GetStory from '@/utils/api/getStory.js';
 
 const URL_PARAM = 1;
@@ -7,7 +7,7 @@ const SingleStory = ({ story }) => {
   return (
     <>
       <MetaTag pageTitle={story.title} />
-      <Card story={story} />;
+      <StoryCard story={story} />;
     </>
   );
 };

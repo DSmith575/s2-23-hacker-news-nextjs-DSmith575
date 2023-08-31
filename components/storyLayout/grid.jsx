@@ -16,7 +16,7 @@ const Grid = ({ story, refPage }) => {
                 }>
                 <Link
                   className={
-                    'text-center text-sm group-hover:font-bold group-hover:text-greenBlueColor group-hover:uppercase hover:ease-linear group-hover:duration-100'
+                    'text-center text-sm break-all group-hover:font-bold group-hover:text-greenBlueColor group-hover:uppercase hover:ease-linear group-hover:duration-100'
                   }
                   href={`/${refPage}/${value.id}`}>
                   {value.title}
