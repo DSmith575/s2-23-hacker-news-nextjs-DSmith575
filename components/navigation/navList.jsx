@@ -14,77 +14,23 @@
  */
 
 import NavButton from '@/components/navigation/navButton.jsx';
+import { ROUTES } from '@/data/routes.js';
 
 const NavList = () => {
   return (
     <>
       <ul
         className={`bg-slate-200 rounded-md ring mx-4 flex flex-col z-50 md:flex-row md:bg-inherit text-center`}>
-        {/* block md:hidden lg:hidden xl:hidden */}
-        <li className={''}>
-          <NavButton
-            route={'/'}
-            text={'Home'}
-            color={'text-sky-400'}
-            hover={true}
-          />
-        </li>
-        <li>
-          <NavButton
-            route={'/'}
-            text={'Leaders'}
-            color={'text-sky-400'}
-            hover={true}
-          />
-        </li>
-        <li>
-          <NavButton
-            route={'/story/askstories'}
-            text={'Ask Stories'}
-            color={'text-sky-400'}
-            hover={true}
-          />
-        </li>
-        <li>
-          <NavButton
-            route={'/story/beststories'}
-            text={'Best Stories'}
-            color={'text-sky-400'}
-            hover={true}
-          />
-        </li>
-        <li>
-          <NavButton
-            route={'/story/jobstories'}
-            text={'Job Stories'}
-            color={'text-sky-400'}
-            hover={true}
-          />
-        </li>
-        <li>
-          <NavButton
-            route={'/story/newstories'}
-            text={'New Stories'}
-            color={'text-sky-400'}
-            hover={true}
-          />
-        </li>
-        <li>
-          <NavButton
-            route={'/story/showstories'}
-            text={'Show Stories'}
-            color={'text-sky-400'}
-            hover={true}
-          />
-        </li>
-        <li>
-          <NavButton
-            route={'/story/topstories'}
-            text={'Top Stories'}
-            color={'text-sky-400'}
-            hover={true}
-          />
-        </li>
+        {ROUTES.map((route) => (
+          <li key={route.route}>
+            <NavButton
+              route={route.route}
+              text={route.text}
+              color={route.color}
+              hover={route.hover}
+            />
+          </li>
+        ))}
       </ul>
     </>
   );

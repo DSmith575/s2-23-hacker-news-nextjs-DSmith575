@@ -1,4 +1,4 @@
-import ApiRequest from '@/api/apiRequest.js';
+import ApiRequest from '@/utils/api/apiRequest.js';
 import MetaTag from '@/components/metaTag/metaTag.jsx';
 import Grid from '@/components/storyLayout/grid.jsx';
 

@@ -1,8 +1,7 @@
-import { singleStoryInstance } from '@/axios/instance.js';
+import { singleStoryInstance } from '@/utils/axios/API.js';
 
 const GetStory = async (endPoint) => {
   try {
-    console.log(endPoint);
     const getStory = await singleStoryInstance.get(endPoint);
     const story = getStory.data;
     return story;

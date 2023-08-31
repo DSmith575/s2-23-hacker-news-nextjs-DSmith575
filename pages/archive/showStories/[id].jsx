@@ -1,6 +1,6 @@
 import Card from '@/components/card/card.jsx';
 import MetaTag from '@/components/metaTag/metaTag.jsx';
-import GetStory from '@/api/getStory.js';
+import GetStory from '@/utils/api/getStory.js';
 
 const ShowStoryPage = ({ story }) => {
   return (

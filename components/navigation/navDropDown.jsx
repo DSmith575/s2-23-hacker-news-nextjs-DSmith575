@@ -16,6 +16,7 @@
 import NavList from '@/components/navigation/navList.jsx';
 import { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { AiOutlineClose } from 'react-icons/ai';
 
 const NavDropDown = () => {
   const [clicked, setClicked] = useState(false);
@@ -25,12 +26,16 @@ const NavDropDown = () => {
   };
   return (
     <>
-      <div class={'block md:hidden'} onClick={toggleDropDown}>
-        <GiHamburgerMenu size={40} />
-        {clicked && (
-          <div className={'my-4'}>
-            <NavList />
-          </div>
+      <div className={'block md:hidden'}>
+        {!clicked ? (
+          <GiHamburgerMenu size={40} onClick={toggleDropDown} />
+        ) : (
+          <>
+            <AiOutlineClose size={40} onClick={toggleDropDown} />
+            <div className={'my-4'}>
+              <NavList />
+            </div>
+          </>
         )}
       </div>
     </>

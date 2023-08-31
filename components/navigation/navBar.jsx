@@ -25,7 +25,7 @@ const NavBar = () => {
         </div>
         <div
           className={
-            'hidden md:flex sm:justify-start md:justify-center xl:justify-between collapse:'
+            'hidden md:flex sm:justify-start md:justify-center xl:justify-between'
           }>
           <div className={'hidden sm:hidden md:hidden lg:hidden xl:block'}>
             <NavButton

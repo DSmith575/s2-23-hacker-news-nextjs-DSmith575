@@ -1,6 +1,6 @@
 import Grid from '@/components/storyLayout/grid.jsx';
 import MetaTag from '@/components/metaTag/metaTag.jsx';
-import ApiRequest from '@/api/apiRequest.js';
+import ApiRequest from '@/utils/api/apiRequest.js';
 
 const ShowStories = ({ showStories }) => {
   return (
