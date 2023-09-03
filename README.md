@@ -34,3 +34,5 @@ npm run envSetup
 
 [DangerouslySetHTML](https://react.dev/reference/react-dom/components/common#dangerously-setting-the-inner-html)  
 [DOMPurify for DSH](https://www.npmjs.com/package/isomorphic-dompurify)
+
+[toISOString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString)

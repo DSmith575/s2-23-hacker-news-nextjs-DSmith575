@@ -32,7 +32,7 @@ const NavDropDown = () => {
         ) : (
           <>
             <AiOutlineClose size={40} onClick={toggleDropDown} />
-            <div className={'my-4'}>
+            <div className={'my-4'} onClick={toggleDropDown}>
               <NavList />
             </div>
           </>

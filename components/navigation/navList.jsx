@@ -6,7 +6,7 @@
  * @description List containing NavButton components for the navbar component
  *
  * @param {Array} - Tuple containing menuOpen boolean & toggle function
- * @param {ul/lu} - un-ordered list containing navButton links
+ * @param {ul/lu} - Un-ordered list containing navButton links
  * @returns {JSX.Element} - Component for dropdown routing links
  *
  * @created 27-08-2023
