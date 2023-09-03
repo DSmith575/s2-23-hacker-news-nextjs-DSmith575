@@ -6,7 +6,7 @@ export const ROUTES = [
     hover: true,
   },
   {
-    route: '/',
+    route: '/leaders/top20',
     text: 'Leaders',
     color: 'text-sky-400',
     hover: true,

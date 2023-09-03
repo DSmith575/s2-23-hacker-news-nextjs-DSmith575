@@ -31,3 +31,6 @@ npm run envSetup
 
 [Hacker News Api LimitToFirst](https://www.elliotsachs.com/how-to-limit-the-number-of-stories-returned-by-the-hacker-news-api/)  
 [Hacker News API README](https://github.com/HackerNews/API)
+
+[DangerouslySetHTML](https://react.dev/reference/react-dom/components/common#dangerously-setting-the-inner-html)  
+[DOMPurify for DSH](https://www.npmjs.com/package/isomorphic-dompurify)

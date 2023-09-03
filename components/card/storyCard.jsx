@@ -1,17 +1,6 @@
 import Link from 'next/link';
-import { decode } from 'he';
-
-const convertTime = (timeStamp) => {
-  const date = new Date(timeStamp);
-  const todayDate = new Date(timeStamp * 1000);
-  const postedDated = new Date(todayDate - date).toLocaleDateString();
-  return postedDated;
-};
-
-const convertHTML = (text) => {
-  const decodeHTML = decode(text);
-  return { __html: decodeHTML };
-};
+import { convertTime } from '@/utils/dateTime/convertUnix.js';
+import { decodeSanitize } from '@/utils/decode/decodeSanitize.js';
 
 const StoryCard = ({ story }) => {
   return (
@@ -20,8 +9,8 @@ const StoryCard = ({ story }) => {
         className={
           'w-[85%] md:w-[55%] mx-auto p-12 bg-white border border-gray-200 rounded-lg shadow-3xl hover:bg-gray-200 break-words'
         }>
-        <ul className={''}>
-          <li className={'font-bold text-center'}>{story.title}</li>
+        <ul>
+          <li className={'font-bold text-center pb-2'}>{story.title}</li>
           <li>
             <span className={'font-bold'}>Type: </span> {story.type}
           </li>
@@ -39,8 +28,10 @@ const StoryCard = ({ story }) => {
           {/* Returns storytext if API returns any value */}
           {story.text && (
             <>
-              <h1 className={'font-bold mt-5 break-words'}>Story</h1>
-              <li dangerouslySetInnerHTML={convertHTML(story.text)}></li>
+              <h1 className={'font-bold mt-5 break-words pb-2'}>Story</h1>
+              <li
+                className={'text-center'}
+                dangerouslySetInnerHTML={decodeSanitize(story.text)}></li>
             </>
           )}
         </ul>
