@@ -42,7 +42,7 @@ const NavDropDown = () => {
               onClick={toggleDropDown}
             />
             <div className={'my-4'} onClick={toggleDropDown}>
-              <NavList />
+              <NavList isDropDown={true} />
             </div>
           </>
         )}

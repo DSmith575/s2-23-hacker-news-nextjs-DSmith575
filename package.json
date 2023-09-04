@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "npm run lint -- --fix",
+    "lint:fix": "eslint --fix --ext .js,.jsx .",
     "commit": "git-cz",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",

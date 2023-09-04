@@ -27,7 +27,7 @@
     "no-extra-parens": "off",
     "no-trailing-spaces": "warn",
     "no-unused-vars": "warn",
-    "consistent-return": "warn",
+    "consistent-return": "off",
     "import/extensions": [
       "error",
       "ignorePackages",

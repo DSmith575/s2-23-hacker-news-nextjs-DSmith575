@@ -35,7 +35,7 @@ const NavBar = () => {
             />
           </div>
           <div className={'invisible sm:invisible md:visible'}>
-            <NavList />
+            <NavList isDropDown={false} />
           </div>
         </div>
       </nav>

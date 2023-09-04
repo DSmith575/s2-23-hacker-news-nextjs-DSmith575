@@ -23,14 +23,14 @@ describe('NavBar', () => {
       expect(screen.getByText('Ask Stories')).toBeInTheDocument();
     });
 
-    it('should click hamburg Dropdown and display 8 routes', () => {
+    it('should click hamburg Dropdown and display 6 routes', () => {
       render(<NavDropDown />);
 
       const hamburgerIcon = screen.getByTitle('Hamburger Icon');
       expect(hamburgerIcon).toBeInTheDocument();
       fireEvent.click(hamburgerIcon);
       const routes = screen.getAllByRole('link');
-      expect(routes).toHaveLength(8);
+      expect(routes).toHaveLength(6);
     });
 
     it('should click hamburger icon, then click x icon', () => {
@@ -38,13 +38,26 @@ describe('NavBar', () => {
 
       const hamburgerIcon = screen.getByTitle('Hamburger Icon');
       expect(hamburgerIcon).toBeInTheDocument();
+
       fireEvent.click(hamburgerIcon);
-      const homeLink = screen.getByText('Home');
+
+      const homeLink = screen.getByText('Show Stories');
       expect(homeLink).toBeInTheDocument();
+
       const crossIcon = screen.getByTitle('Cross Icon');
       expect(crossIcon).toBeInTheDocument();
       fireEvent.click(crossIcon);
+
       expect(homeLink).not.toBeInTheDocument();
+    });
+
+    it('should click hamburger icon and then test if icon is not there once clicked', () => {
+      render(<NavDropDown />);
+
+      const hamburg = screen.getByTitle('Hamburger Icon');
+      expect(hamburg).toBeInTheDocument();
+      fireEvent.click(hamburg);
+      expect(hamburg).not.toBeInTheDocument();
     });
   });
 });
@@ -59,15 +72,4 @@ describe('NavBar', () => {
 //   expect(eles).toHaveLength(20);
 
 // })
-// })
-
-// describe('Stories', () =>{
-//   it('should render 40 story cards', () => {
-//     render(
-//       <Stories stories={stories}/>
-//     );
-
-//     const eles = screen.getAllByRole('listitem');
-//     expect(eles).toHaveLength(40);
-//   })
 // })
