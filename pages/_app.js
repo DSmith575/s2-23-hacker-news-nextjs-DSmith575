@@ -1,16 +1,15 @@
 /**
- * @file Main App
+ * @description Applies global styles, loads fonts, wraps entire app in a layout
+ * @file _app.js
+ *
  * @author Deacon Smith
  *
- * @description Applies global styles, loads fonts, wraps entire app in a layout
- *
- * @component
- * @const {Object} roboto - Font with custom styling
+ * @const {Font} roboto - Font with custom styling
  *
  * @return {JSX.Element} Main App component
  *
  * @created 27-08-2023
- * @updated 28-08-2023
+ * @updated 04-09-2023
  */
 
 import '@/styles/globals.css';

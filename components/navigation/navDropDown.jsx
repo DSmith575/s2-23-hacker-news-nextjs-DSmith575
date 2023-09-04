@@ -1,13 +1,13 @@
 /**
  * @description Mobile view dropdown menu
  * @file navDropDown.jsx
- * 
+ *
  * @author Deacon Smith
  *
  * @param {Array} NavDropDown - Tuple containing menuOpen boolean & toggle function
  * @param {Icon} GiHamburgerMenu - Hamburger icon
  * @param {Icon} AiOutlineClose - X icon
- * 
+ *
  * @returns {JSX.Element} - Component for dropdown routing links
  *
  * @created 27-08-2023

@@ -1,9 +1,9 @@
 /**
  * @description Grid Component for Displaying stories/leaders
  * @file grid.jsx
- * 
+ *
  * @author Deacon Smith
- * 
+ *
  * @returns {JSX.Element} - Grid Layout
  *
  * @created 27-08-2023
@@ -22,7 +22,6 @@ const Grid = ({ story, refPage }) => {
           }>
           {story.map((value) => (
             <li key={value.id}>
-              {console.log(value.id)}
               <div
                 className={
                   'mt-4 mx-auto lg:shadow-3xl group border border-greenBlueColor w-[75%] h-20 flex justify-center items-center ring-2 ring-greenBlueColor rounded-md hover:bg-white'

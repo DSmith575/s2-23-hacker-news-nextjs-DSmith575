@@ -1,11 +1,11 @@
 /**
  * @description Navigation bar for handling routing buttons
  * @file navBar.jsx
- * 
+ *
  * @author Deacon Smith
  *
  * @returns {JSX.Element} - Component for navigation
- * 
+ *
  * @created 27-08-2023
  * @updated 04-09-2023
  */

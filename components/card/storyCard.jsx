@@ -1,7 +1,7 @@
 /**
  * @description Renders the selected story information
  * @file storyCard.jsx
- * 
+ *
  * @author Deacon Smith
  *
  * @returns {JSX.Element} - Story Information Page

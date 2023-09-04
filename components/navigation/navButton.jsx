@@ -1,7 +1,7 @@
 /**
  * @description Button for handling next/link routing
  * @file navButton.jsx
- * 
+ *
  * @author Deacon Smith
  *
  * @param {string} route - Page to move to {'/askStories'}

@@ -1,3 +1,18 @@
+/**
+ * @description Slug page for stories
+ * @file [title].jsx
+ *
+ * @author Deacon Smith
+ *
+ * @param {String} title - Displays current title of page
+ * @param {Object} stories - Object of story data
+
+ * @return {JSX.Element} - Component containing Grid list of stories
+ *
+ * @created 04-09-2023
+ * @updated 04-09-2023
+ */
+
 import ApiRequest from '@/utils/api/getStories.js';
 import MetaTag from '@/components/metaTag/metaTag.jsx';
 import Grid from '@/components/storyLayout/grid.jsx';

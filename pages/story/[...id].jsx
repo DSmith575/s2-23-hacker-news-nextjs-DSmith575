@@ -1,3 +1,18 @@
+/**
+ * @description ID slug page for storie
+ * @file [...id].jsx
+ *
+ * @author Deacon Smith
+ *
+ * @param {Object} story - Object of single story data
+ * @param {Number} URL_PARAM - getting the correct value for context
+ *
+ * @return {JSX.Element} selected story
+ *
+ * @created 04-09-2023
+ * @updated 04-09-2023
+ */
+
 import MetaTag from '@/components/metaTag/metaTag.jsx';
 import StoryCard from '@/components/card/storyCard.jsx';
 import GetStory from '@/utils/api/getStory.js';

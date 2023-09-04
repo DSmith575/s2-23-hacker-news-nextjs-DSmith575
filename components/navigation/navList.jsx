@@ -1,7 +1,7 @@
 /**
  * @description List containing NavButton components for the navbar component
  * @file navList.jsx
- * 
+ *
  * @author Deacon Smith
  *
  * @returns {JSX.Element} - Component for dropdown routing links

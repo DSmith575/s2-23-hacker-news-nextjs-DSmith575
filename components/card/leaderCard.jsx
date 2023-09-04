@@ -1,7 +1,7 @@
 /**
  * @description Renders the selected leader information
  * @file leaderCard.jsx
- * 
+ *
  * @author Deacon Smith
  *
  * @returns {JSX.Element} - User Information Page
@@ -13,7 +13,7 @@
 import Link from 'next/link';
 import { convertTime } from '@/utils/dateTime/convertUnix.js';
 import { decodeSanitize } from '@/utils/decode/decodeSanitize.js';
- 
+
 const LeaderCard = ({ user }) => {
   return (
     <>

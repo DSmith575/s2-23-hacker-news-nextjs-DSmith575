@@ -1,7 +1,7 @@
 /**
  * @description Wrapper component that conditionally renders a component.
  * @file ssrWrapper.jsx
- * 
+ *
  * @author Deacon Smith
  *
  * @created 27-08-2023

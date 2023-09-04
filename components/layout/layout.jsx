@@ -1,7 +1,7 @@
 /**
  * @description Layout component includes a nav bar and wraps page content for all pages
  * @file layout.jsx
- * 
+ *
  * @author Deacon Smith
  *
  * @param {object} children - Content wrapped by layout
