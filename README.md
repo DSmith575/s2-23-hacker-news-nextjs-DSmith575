@@ -30,19 +30,31 @@ HACKER_NEWS_URL="https://hacker-news.firebaseio.com/v0/"
 
 ```js
 npm run lint
-npm run lint:fix
 ```
 
 ```js
-npm run format
-npm run format:fix
+npm run format - to check for errors
+npm run format:fix - to fix all errors with prettierconfig
 ```
 
 ## Running Dev
+```js
+To run the dev environment run
+
+npm run dev
+```
 
 
 ## Running Test Suite
+```js
+To run the Jest/RTL test suite
 
+npm run test
+
+OR
+
+npm run test:watch
+```
 
 ## References <a name="references"/>
 
