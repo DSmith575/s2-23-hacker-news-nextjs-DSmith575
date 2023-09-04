@@ -4,6 +4,7 @@
 - [Project Setup](#project-setup)
     + [npm Setup](#npm-setup)
   * [env Setup](#env-setup)
+- [Prettier/ESLint](#pre-lint)
 - [References](#references)
 
 ## About <a name="about"/>
@@ -24,6 +25,24 @@ Add .env to rootDir
 in .env add
 HACKER_NEWS_URL="https://hacker-news.firebaseio.com/v0/"
 ```
+
+## Formatting Code (Prettier/ESlint) <a name="pre-lint"/>
+
+```js
+npm run lint
+npm run lint:fix
+```
+
+```js
+npm run format
+npm run format:fix
+```
+
+## Running Dev
+
+
+## Running Test Suite
+
 
 ## References <a name="references"/>
 
