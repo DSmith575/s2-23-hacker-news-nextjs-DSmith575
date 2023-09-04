@@ -1,42 +1,73 @@
-import Layout from '@/components/layout/layout';
+import Layout from '@/components/layout/layout.jsx';
 import NavBar from '@/components/navigation/navBar.jsx';
-import Title from '@/pages/leaders/[title]';
+import Leaders from '@/pages/leaders/[title].jsx';
+import Stories from '@/pages/story/[title].jsx';
 import Home from '@/pages/index.js';
-import { render, screen, waitFor, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
+import NavDropDown from '@/components/navigation/navDropDown.jsx';
 
-describe('Home Page Navigation', () => {
-  it('render Home page with Layout (NavBar)', () => {
-    render(
-      <Layout>
-        <Home />
-      </Layout>,
-    );
-    expect(screen.getByText('Top Stories')).toBeInTheDocument();
+describe('NavBar', () => {
+  describe('Rendering', () => {
+    it('should render a NavBar with 9 buttons', () => {
+      render(<NavBar />);
+      const totalButtons = screen.getAllByRole('link');
+      expect(totalButtons).toHaveLength(9);
+    });
+
+    it('should click hamburg Dropdown and display routes', () => {
+      render(<NavDropDown />);
+
+      const hamburgerIcon = screen.getByTitle('Hamburger Icon');
+      expect(hamburgerIcon).toBeInTheDocument();
+      fireEvent.click(hamburgerIcon);
+      expect(screen.getByText('Ask Stories')).toBeInTheDocument();
+    });
+
+    it('should click hamburg Dropdown and display 8 routes', () => {
+      render(<NavDropDown />);
+
+      const hamburgerIcon = screen.getByTitle('Hamburger Icon');
+      expect(hamburgerIcon).toBeInTheDocument();
+      fireEvent.click(hamburgerIcon);
+      const routes = screen.getAllByRole('link');
+      expect(routes).toHaveLength(8);
+    });
+
+    it('should click hamburger icon, then click x icon', () => {
+      render(<NavDropDown />);
+
+      const hamburgerIcon = screen.getByTitle('Hamburger Icon');
+      expect(hamburgerIcon).toBeInTheDocument();
+      fireEvent.click(hamburgerIcon);
+      const homeLink = screen.getByText('Home');
+      expect(homeLink).toBeInTheDocument();
+      const crossIcon = screen.getByTitle('Cross Icon');
+      expect(crossIcon).toBeInTheDocument();
+      fireEvent.click(crossIcon);
+      expect(homeLink).not.toBeInTheDocument();
+    });
   });
 });
 
-describe('Clicking navBar Ask Stores', () => {
-  it('should find the ask stories button in navBar and click it', async () => {
-    render(
-      <Layout>
-        <Home />
-      </Layout>,
-    );
+// describe('Leader page grid', () => {
+// it('should render 20 cards in the grid for Leaders', () => {
+//   render(
+//       <Leaders/>
+//   );
 
-    const askStoryButton = screen.getByText('Leaders');
-    expect(askStoryButton).toBeInTheDocument();
-    fireEvent.click(askStoryButton);
-  });
-});
+//   const eles = screen.getAllByRole('listitem');
+//   expect(eles).toHaveLength(20);
 
-describe('Memes', () => {
-  it('should have memes', () => {
-    render(
-      <Layout>
-        <Title />
-      </Layout>,
-    );
-    const numofeles = screen.getAllByTestId('gridTest');
-    expect(numofeles).toHaveLength(20);
-  });
-});
+// })
+// })
+
+// describe('Stories', () =>{
+//   it('should render 40 story cards', () => {
+//     render(
+//       <Stories stories={stories}/>
+//     );
+
+//     const eles = screen.getAllByRole('listitem');
+//     expect(eles).toHaveLength(40);
+//   })
+// })

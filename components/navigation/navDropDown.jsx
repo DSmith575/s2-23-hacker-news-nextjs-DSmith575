@@ -29,10 +29,18 @@ const NavDropDown = () => {
     <>
       <div className={'block md:hidden'}>
         {!clicked ? (
-          <GiHamburgerMenu size={40} onClick={toggleDropDown} />
+          <GiHamburgerMenu
+            title={'Hamburger Icon'}
+            size={40}
+            onClick={toggleDropDown}
+          />
         ) : (
           <>
-            <AiOutlineClose size={40} onClick={toggleDropDown} />
+            <AiOutlineClose
+              title={'Cross Icon'}
+              size={40}
+              onClick={toggleDropDown}
+            />
             <div className={'my-4'} onClick={toggleDropDown}>
               <NavList />
             </div>
