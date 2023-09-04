@@ -41,9 +41,7 @@ const StoryCard = ({ story }) => {
           {story.text && (
             <>
               <h1 className={'font-bold mt-5 break-words pb-2'}>Story</h1>
-              <li
-                className={'text-center'}
-                dangerouslySetInnerHTML={decodeSanitize(story.text)}></li>
+              <li dangerouslySetInnerHTML={decodeSanitize(story.text)}></li>
             </>
           )}
         </ul>
