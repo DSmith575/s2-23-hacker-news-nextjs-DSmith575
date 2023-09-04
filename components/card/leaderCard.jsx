@@ -1,10 +1,10 @@
 /**
- * @file Renders the selected leader information
+ * @description Renders the selected leader information
+ * @file leaderCard.jsx
+ * 
  * @author Deacon Smith
  *
- * @description Main page of App
- *
- * @return {JSX.Element} - User Information Page
+ * @returns {JSX.Element} - User Information Page
  *
  * @created 04-09-2023
  * @updated 04-09-2023
@@ -13,13 +13,13 @@
 import Link from 'next/link';
 import { convertTime } from '@/utils/dateTime/convertUnix.js';
 import { decodeSanitize } from '@/utils/decode/decodeSanitize.js';
-
+ 
 const LeaderCard = ({ user }) => {
   return (
     <>
       <div
         className={
-          'w-[85%] md:w-[55%] mx-auto p-12 bg-white border border-gray-200 rounded-lg shadow-3xl hover:bg-gray-200 break-words'
+          'w-[85%] md:w-[55%] mx-auto p-12 bg-white border border-gray-200 rounded-lg shadow-3xl hover:bg-gray-200 break-words mt-12'
         }>
         <ul>
           <li className={''}>

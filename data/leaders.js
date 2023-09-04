@@ -1,3 +1,19 @@
+/**
+ * @description Array of top Hacker news Top leaders (Top20)
+ * @file leaders.js
+ * 
+ * @author Deacon Smith
+ * 
+ * @param {title} - username
+ * @param {id} - userID
+ * @description - Title and ID are the same so that I can re-use my grid component
+ * 
+ * @returns {Array} - Array of leaders
+ *
+ * @created 04-09-2023
+ * @updated 04-09-2023
+ */
+
 export const LEADERLIST = [
   { title: 'tptacek', id: 'tptacek' },
   { title: 'jacquesm', id: 'jacquesm' },

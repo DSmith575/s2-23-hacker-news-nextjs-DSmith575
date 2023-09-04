@@ -1,16 +1,13 @@
 /**
- * @file Navbar List
+ * @description List containing NavButton components for the navbar component
+ * @file navList.jsx
+ * 
  * @author Deacon Smith
  *
- * @component
- * @description List containing NavButton components for the navbar component
- *
- * @param {Array} - Tuple containing menuOpen boolean & toggle function
- * @param {ul/lu} - Un-ordered list containing navButton links
  * @returns {JSX.Element} - Component for dropdown routing links
  *
  * @created 27-08-2023
- * @updated 28-08-2023
+ * @updated 04-09-2023
  */
 
 import NavButton from '@/components/navigation/navButton.jsx';

@@ -1,10 +1,9 @@
 /**
- * @file Navigation link button
+ * @description Button for handling next/link routing
+ * @file navButton.jsx
+ * 
  * @author Deacon Smith
  *
- * @description Button for handling next/link routing
- *
- * @component
  * @param {string} route - Page to move to {'/askStories'}
  * @param {string} text - text to display {'AskStories'}
  * @param {string} color - Font color {'text-sky-400'}
@@ -13,7 +12,7 @@
  * @return {JSX.Element} - Component for link buttons
  *
  * @created 27-08-2023
- * @updated 28-08-2023
+ * @updated 04-09-2023
  */
 
 import Link from 'next/link';

@@ -1,14 +1,13 @@
 /**
- * @file Navigation bar
+ * @description Navigation bar for handling routing buttons
+ * @file navBar.jsx
+ * 
  * @author Deacon Smith
  *
- * @component
- * @description Navigation bar for handling routing buttons
- *
  * @returns {JSX.Element} - Component for navigation
- *
+ * 
  * @created 27-08-2023
- * @updated 28-08-2023
+ * @updated 04-09-2023
  */
 
 import withNoSsr from '@/components/hooks/ssr/ssrWrapper.jsx';

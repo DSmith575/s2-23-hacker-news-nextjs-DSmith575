@@ -1,3 +1,15 @@
+/**
+ * @description Grid Component for Displaying stories/leaders
+ * @file grid.jsx
+ * 
+ * @author Deacon Smith
+ * 
+ * @returns {JSX.Element} - Grid Layout
+ *
+ * @created 27-08-2023
+ * @updated 04-09-2023
+ */
+
 import Link from 'next/link';
 
 const Grid = ({ story, refPage }) => {

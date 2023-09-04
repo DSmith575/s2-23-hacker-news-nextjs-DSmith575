@@ -1,3 +1,15 @@
+/**
+ * @description Renders the selected story information
+ * @file storyCard.jsx
+ * 
+ * @author Deacon Smith
+ *
+ * @returns {JSX.Element} - Story Information Page
+ *
+ * @created 27-08-2023
+ * @updated 04-09-2023
+ */
+
 import Link from 'next/link';
 import { convertTime } from '@/utils/dateTime/convertUnix.js';
 import { decodeSanitize } from '@/utils/decode/decodeSanitize.js';
@@ -7,7 +19,7 @@ const StoryCard = ({ story }) => {
     <>
       <div
         className={
-          'w-[85%] md:w-[55%] mx-auto p-12 bg-white border border-gray-200 rounded-lg shadow-3xl hover:bg-gray-200 break-words'
+          'w-[85%] md:w-[55%] mx-auto p-12 bg-white border border-gray-200 rounded-lg shadow-3xl hover:bg-gray-200 break-words mt-12'
         }>
         <ul>
           <li className={'font-bold text-center pb-2'}>{story.title}</li>

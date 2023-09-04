@@ -1,16 +1,15 @@
 /**
- * @file Layout that will wrap entire App
+ * @description Layout component includes a nav bar and wraps page content for all pages
+ * @file layout.jsx
+ * 
  * @author Deacon Smith
  *
- * @description Component includes a nav bar and wraps page content for all pages
- *
- * @component
  * @param {object} children - Content wrapped by layout
  *
  * @return {JSX.Element} - Layout structure
  *
  * @created 27-08-2023
- * @updated 28-08-2023
+ * @updated 04-09-2023
  */
 
 import NavBar from '@/components/navigation/navBar.jsx';

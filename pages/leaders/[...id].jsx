@@ -1,3 +1,17 @@
+/**
+ * @description ID slug page for leaders
+ * @file [...id].jsx
+ * 
+ * @author Deacon Smith
+ *
+ * @param {story} - Object of user data
+ *@param {Number} - URL_PARAM: getting the correct value for context
+ * @return {JSX.Element} Main App component
+ *
+ * @created 04-09-2023
+ * @updated 04-09-2023
+ */
+
 import MetaTag from '@/components/metaTag/metaTag.jsx';
 import GetStory from '@/utils/api/getStory.js';
 import LeaderCard from '@/components/card/leaderCard.jsx';

@@ -11,7 +11,7 @@
 
 ## Project Setup <a name="project-setup"/>
 
-#### npm Setup <a name="npm-setup"/>
+### npm Setup <a name="npm-setup"/>
 `npm install`
 
 ### env Setup <a name="env-setup"/>

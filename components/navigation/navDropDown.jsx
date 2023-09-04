@@ -1,16 +1,17 @@
 /**
- * @file DropDown for navigation bar
+ * @description Mobile view dropdown menu
+ * @file navDropDown.jsx
+ * 
  * @author Deacon Smith
  *
- * @component
- * @description Mobile view dropdown menu
- *
- * @param {Array} - Tuple containing menuOpen boolean & toggle function
+ * @param {Array} NavDropDown - Tuple containing menuOpen boolean & toggle function
+ * @param {Icon} GiHamburgerMenu - Hamburger icon
+ * @param {Icon} AiOutlineClose - X icon
+ * 
  * @returns {JSX.Element} - Component for dropdown routing links
- * @param {GiHamburgerMenu} - Hamburger icon
  *
  * @created 27-08-2023
- * @updated 28-08-2023
+ * @updated 04-09-2023
  */
 
 import NavList from '@/components/navigation/navList.jsx';
