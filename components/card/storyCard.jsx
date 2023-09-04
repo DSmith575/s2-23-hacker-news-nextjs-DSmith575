@@ -19,7 +19,7 @@ const StoryCard = ({ story }) => {
     <>
       <div
         className={
-          'w-[85%] md:w-[55%] mx-auto p-12 bg-white border border-gray-200 rounded-lg shadow-3xl hover:bg-gray-200 break-words mt-12'
+          'w-[85%] mx-auto p-12 bg-white border border-gray-200 rounded-lg shadow-3xl hover:bg-gray-200 break-words mt-12'
         }>
         <ul>
           <li className={'font-bold text-center pb-2'}>{story.title}</li>
