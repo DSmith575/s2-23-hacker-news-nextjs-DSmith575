@@ -13,7 +13,7 @@
  * @updated 04-09-2023
  */
 
-import ApiRequest from '@/utils/api/getStories.js';
+import GetStories from '@/utils/api/getStories.js';
 import MetaTag from '@/components/metaTag/metaTag.jsx';
 import Grid from '@/components/storyLayout/grid.jsx';
 
@@ -21,7 +21,7 @@ const Stories = ({ title, stories }) => {
   return (
     <>
       <MetaTag pageTitle={title} />
-      <Grid story={stories} refPage={`story/${title}`} />
+      <Grid story={stories} refPage={title} />
     </>
   );
 };
@@ -29,7 +29,7 @@ const Stories = ({ title, stories }) => {
 export const getServerSideProps = async (context) => {
   try {
     const title = context.params.title;
-    const stories = await ApiRequest(`${title}.json?`);
+    const stories = await GetStories(`${title}.json?`);
 
     return {
       props: {
