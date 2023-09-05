@@ -73,7 +73,7 @@ it('should render 20 cards in the grid for Leaders', () => {
 
 })
 
-it('should do the roar', () => {
+it('check if Leader page contains a guaranteed user ', () => {
   render(<Leaders/>);
   const test = screen.getByText('tptacek');
   expect(test).toBeInTheDocument();
