@@ -1,5 +1,5 @@
 /**
- * @description ID slug page for storie
+ * @description ID slug page for stories
  * @file [...id].jsx
  *
  * @author Deacon Smith
