@@ -10,7 +10,7 @@
  * @updated 04-09-2023
  */
 
-import NavButton from '@/components/navigation/navButton';
+import NavButton from '@/components/navigation/navButton.jsx';
 import { ROUTES } from '@/data/routes.js';
 
 const NavList = ({ isDropDown }) => {

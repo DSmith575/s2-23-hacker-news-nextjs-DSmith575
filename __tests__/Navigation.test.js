@@ -62,14 +62,20 @@ describe('NavBar', () => {
   });
 });
 
-// describe('Leader page grid', () => {
-// it('should render 20 cards in the grid for Leaders', () => {
-//   render(
-//       <Leaders/>
-//   );
+describe('Leader page grid', () => {
+it('should render 20 cards in the grid for Leaders', () => {
+  render(
+      <Leaders/>
+  );
 
-//   const eles = screen.getAllByRole('listitem');
-//   expect(eles).toHaveLength(20);
+  const eles = screen.getAllByRole('listitem');
+  expect(eles).toHaveLength(20);
 
-// })
-// })
+})
+
+it('should do the roar', () => {
+  render(<Leaders/>);
+  const test = screen.getByText('tptacek');
+  expect(test).toBeInTheDocument();
+})
+})
