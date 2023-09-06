@@ -23,7 +23,7 @@ OR
 
 Add .env to rootDir
 in .env add
-HACKER_NEWS_URL="https://hacker-news.firebaseio.com/v0/"
+NEXT_PUBLIC_HACKER_NEWS_URL="https://hacker-news.firebaseio.com/v0/"
 ```
 
 ## Formatting Code (Prettier/ESlint) <a name="pre-lint"/>
