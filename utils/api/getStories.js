@@ -16,7 +16,7 @@
  * @updated 04-09-2023
  */
 
-import { storyInstance } from '@/utils/axios/API.js';
+import { storyInstance } from '@/utils/axios/instance.js';
 
 // Fetch API IDs then maps to their full url
 // Waits for promise then maps all returned data

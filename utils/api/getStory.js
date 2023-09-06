@@ -14,7 +14,7 @@
  * @updated 04-09-2023
  */
 
-import { storyInstance } from '@/utils/axios/API.js';
+import { storyInstance } from '@/utils/axios/instance.js';
 
 // Fetch Story Data from endPoint
 

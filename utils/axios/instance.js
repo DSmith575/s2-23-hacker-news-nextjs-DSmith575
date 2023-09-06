@@ -9,7 +9,7 @@
  * @return {Prop} baseURL - Creates baseURL with env URL
  *
  * @created 04-09-2023
- * @updated 04-09-2023
+ * @updated 06-09-2023
  */
 
 import axios from 'axios';

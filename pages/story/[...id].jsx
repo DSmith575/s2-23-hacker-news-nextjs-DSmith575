@@ -29,8 +29,8 @@ const SingleStory = ({ story }) => {
 
 export const getServerSideProps = async (context) => {
   try {
-    const id = context.params.id[URL_PARAM];
-    const story = await GetStory(`https://hacker-news.firebaseio.com/v0/item/${id}.json?print="pretty"`);
+    const id = await context.params.id[URL_PARAM];
+    const story = await GetStory(`item/${id}.json?`);
     return {
       props: {
         story: story,
