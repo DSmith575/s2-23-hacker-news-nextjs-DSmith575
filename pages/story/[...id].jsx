@@ -15,7 +15,7 @@
 
 import MetaTag from '@/components/metaTag/metaTag.jsx';
 import StoryCard from '@/components/card/storyCard.jsx';
-import GetStory from '@/utils/api/getStory.js';
+import GetStory from '@/utils/getApi/getStory.js';
 
 const URL_PARAM = 1;
 const SingleStory = ({ story }) => {

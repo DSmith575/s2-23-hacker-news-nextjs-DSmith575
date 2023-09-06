@@ -13,7 +13,7 @@
  * @updated 04-09-2023
  */
 
-import GetStories from '@/utils/api/getStories.js';
+import GetStories from '@/utils/getApi/getStories.js';
 import MetaTag from '@/components/metaTag/metaTag.jsx';
 import Grid from '@/components/storyLayout/grid.jsx';
 
