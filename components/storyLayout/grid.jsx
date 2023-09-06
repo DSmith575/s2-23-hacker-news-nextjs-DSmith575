@@ -12,7 +12,7 @@
 
 import Link from 'next/link';
 
-const Grid = ({ story, refPage, pageType }) => {
+const Grid = ({ story, refPage }) => {
   return (
     <>
       <div>
@@ -30,7 +30,7 @@ const Grid = ({ story, refPage, pageType }) => {
                   className={
                     'text-center text-sm break-all group-hover:font-bold group-hover:text-greenBlueColor group-hover:uppercase hover:ease-linear group-hover:duration-100'
                   }
-                  href={`/${pageType}/${refPage}/${value.id}`}>
+                  href={`${refPage}/${value.id}`}>
                   {value.title}
                 </Link>
               </div>

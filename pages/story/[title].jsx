@@ -21,7 +21,7 @@ const Stories = ({ title, stories }) => {
   return (
     <>
       <MetaTag pageTitle={title} />
-      <Grid story={stories} refPage={title} pageType={'story'} />
+      <Grid story={stories} refPage={title} />
     </>
   );
 };

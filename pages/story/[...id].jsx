@@ -22,7 +22,7 @@ const SingleStory = ({ story }) => {
   return (
     <>
       <MetaTag pageTitle={story.title} />
-      <StoryCard story={story} />;
+      <StoryCard story={story} />
     </>
   );
 };

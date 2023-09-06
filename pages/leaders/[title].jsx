@@ -19,7 +19,7 @@ const LeaderStories = ({ leaders }) => {
   return (
     <>
       <MetaTag pageTitle={leaders} />
-      <Grid story={LEADERLIST} refPage={leaders} pageType={'leaders'} />
+      <Grid story={LEADERLIST} refPage={leaders} />
     </>
   );
 };

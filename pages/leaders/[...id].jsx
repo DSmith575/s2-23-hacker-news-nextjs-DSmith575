@@ -21,7 +21,7 @@ const SingleStory = ({ story }) => {
   return (
     <>
       <MetaTag pageTitle={story.id} />
-      <LeaderCard user={story} />;
+      <LeaderCard user={story} />
     </>
   );
 };
