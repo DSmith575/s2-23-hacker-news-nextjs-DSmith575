@@ -14,6 +14,10 @@ describe('NavBar', () => {
       expect(totalButtons).toHaveLength(9);
     });
 
+    it('should render NavBar and not have the Home button displayed', () => {
+      expect(screen.queryByText('Home')).not.toBeInTheDocument();
+    })
+
     it('should click hamburg Dropdown and display routes', () => {
       render(<NavDropDown />);
 
