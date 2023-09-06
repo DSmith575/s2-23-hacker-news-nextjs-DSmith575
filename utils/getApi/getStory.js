@@ -25,7 +25,7 @@ const GetStory = async (endPoint) => {
         print: 'pretty',
       },
     });
-    const story = getStory.data;
+    const story = await getStory.data;
     return story;
   } catch (err) {
     console.log(err);
