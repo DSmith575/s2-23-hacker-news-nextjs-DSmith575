@@ -1,7 +1,8 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Leaders from '@/pages/leaders/[title].jsx';
 
 describe('Leader page grid', () => {
+  describe('rendering', () => {
   it('should render 20 cards in the grid for Leaders', () => {
     render(<Leaders />);
 
@@ -14,4 +15,6 @@ describe('Leader page grid', () => {
     const userName = screen.getByText('tptacek');
     expect(userName).toBeInTheDocument();
   });
+
+});
 });

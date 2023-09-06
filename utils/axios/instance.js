@@ -14,6 +14,7 @@
 
 import axios from 'axios';
 
+axios.defaults.headers.post['Content-Type'] = 'application/json';
 const HACKER_NEWS_URL = process.env.NEXT_PUBLIC_HACKER_NEWS_URL;
 
 export const storyInstance = axios.create({
