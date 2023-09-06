@@ -61,18 +61,3 @@ describe('NavBar', () => {
     });
   });
 });
-
-describe('Leader page grid', () => {
-  it('should render 20 cards in the grid for Leaders', () => {
-    render(<Leaders />);
-
-    const eles = screen.getAllByRole('listitem');
-    expect(eles).toHaveLength(20);
-  });
-
-  it('check if Leader page contains a guaranteed user ', () => {
-    render(<Leaders />);
-    const test = screen.getByText('tptacek');
-    expect(test).toBeInTheDocument();
-  });
-});

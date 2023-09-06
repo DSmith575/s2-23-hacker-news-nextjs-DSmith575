@@ -18,6 +18,9 @@ const NavList = ({ isDropDown }) => {
     <>
       <ul
         className={`bg-slate-200 rounded-md ring mx-4 flex flex-col z-50 md:flex-row md:bg-inherit text-center`}>
+        {/* If prop passed through is true, slice the first 2 from the route, otherwise map the full list
+          this is purely for assignment sake of only displaying stories in the drop down
+          */}
         {isDropDown
           ? ROUTES.slice(2).map((route) => (
               <li key={route.route}>

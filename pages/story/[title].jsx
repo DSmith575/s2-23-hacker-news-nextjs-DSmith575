@@ -40,6 +40,7 @@ export const getServerSideProps = async (context) => {
   } catch (err) {
     return {
       props: {
+        title: title,
         stories: [],
       },
     };
