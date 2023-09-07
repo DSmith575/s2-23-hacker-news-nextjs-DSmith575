@@ -16,7 +16,6 @@ import MetaTag from '@/components/metaTag/metaTag.jsx';
 import GetStory from '@/utils/getApi/getStory.js';
 import LeaderCard from '@/components/card/leaderCard.jsx';
 
-const URL_PARAM = 1;
 const SingleStory = ({ story }) => {
   return (
     <>
@@ -28,6 +27,7 @@ const SingleStory = ({ story }) => {
 
 export const getServerSideProps = async (context) => {
   try {
+    const URL_PARAM = 1;
     const id = context.params.id[URL_PARAM];
     const story = await GetStory(`user/${id}.json?`);
 
