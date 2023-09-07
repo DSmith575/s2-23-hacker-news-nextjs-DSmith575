@@ -13,7 +13,7 @@
  */
 
 import '@/styles/globals.css';
-import { Roboto_Mono } from 'next/font/google';
+import { Roboto_Mono } from '@next/font/google';
 import Layout from '@/components/layout/layout.jsx';
 
 const roboto = Roboto_Mono({
