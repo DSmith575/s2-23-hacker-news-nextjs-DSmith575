@@ -29,7 +29,7 @@ const Stories = ({ title, stories }) => {
 export const getServerSideProps = async (context) => {
   try {
     const title = context.params.title;
-    const stories = await GetStories(`${title}.json?`);
+    const stories = await GetStories(`${title}/.json?`);
 
     return {
       props: {

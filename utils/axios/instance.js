@@ -17,5 +17,5 @@ import axios from 'axios';
 const HACKER_NEWS_URL = process.env.NEXT_PUBLIC_HACKER_NEWS_URL;
 
 export const storyInstance = axios.create({
-  baseURL: HACKER_NEWS_URL
+  baseURL: HACKER_NEWS_URL,
 });
