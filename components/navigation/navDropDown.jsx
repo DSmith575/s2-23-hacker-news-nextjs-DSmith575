@@ -6,12 +6,14 @@
  *
  * @param {Array} NavDropDown - Tuple containing menuOpen boolean & toggle function
  * @param {Icon} GiHamburgerMenu - Hamburger icon
+ * @param {Icon} AiOutLineHome - Home icon
+ * @param {Icon} MdOutlineLeaderBoard - LeaderBoard icon
  * @param {Icon} AiOutlineClose - X icon
  *
  * @returns {JSX.Element} - Component for dropdown routing links
  *
  * @created 27-08-2023
- * @updated 04-09-2023
+ * @updated 08-09-2023
  */
 
 import NavList from '@/components/navigation/navList.jsx';
@@ -35,9 +37,13 @@ const NavDropDown = () => {
     */}
       <div className={'block md:hidden'}>
         <div className={'flex justify-between justify-items-center'}>
-          <NavButton text={<AiOutlineHome size={40} />} route={`/`} />
           <NavButton
-            text={<MdOutlineLeaderboard size={40} />}
+            text={<AiOutlineHome size={40} title={'Icon-Home'} />}
+            route={`/`}
+          />
+
+          <NavButton
+            text={<MdOutlineLeaderboard size={40} title={'Icon-LeaderBoard'} />}
             route={`/leaders/top/`}
           />
 
@@ -48,7 +54,7 @@ to required stories
           {!clicked ? (
             <div className={'px-4 py-2'}>
               <GiHamburgerMenu
-                title={'Hamburger Icon'}
+                title={'Icon-Hamburger'}
                 size={40}
                 onClick={toggleDropDown}
               />
@@ -56,7 +62,7 @@ to required stories
           ) : (
             <div className={'px-4 py-2'}>
               <AiOutlineClose
-                title={'Cross Icon'}
+                title={'Icon-Cross'}
                 size={40}
                 onClick={toggleDropDown}
               />
@@ -65,7 +71,9 @@ to required stories
         </div>
       </div>
 
-{/* If clicked is true, show the Drop down menu */}
+      {/* If clicked is true, show the Drop down menu 
+      This also contains a toggleDropDown to close the navList when a route is clicked
+      */}
       {clicked && (
         <div onClick={toggleDropDown}>
           <NavList isDropDown={true} />
