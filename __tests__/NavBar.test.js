@@ -14,6 +14,11 @@ describe('NavBar', () => {
       expect(screen.getByText('Home')).toBeInTheDocument();
     });
 
+    it('should render normal screen NavBar and have a Leaders button', () => {
+      render(<NavBar />);
+      expect(screen.getByText('Leaders')).toBeInTheDocument();
+    });
+
     it('should render normal screen NavBar and find a Leaders button', () => {
       render(<NavBar />);
       expect(screen.getByText('Leaders')).toBeInTheDocument();

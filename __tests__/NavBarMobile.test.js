@@ -48,5 +48,15 @@ describe('NavBar', () => {
       fireEvent.click(hamburgerIcon);
       expect(screen.getByText('Ask Stories')).toBeInTheDocument();
     });
+
+    it('should not find a Home link in dropdown', () => {
+      render(<NavDropDown />);
+      expect(screen.queryByText('Home')).not.toBeInTheDocument();
+    });
+
+    it('should not find Leaders link in dropdown', () => {
+      render(<NavDropDown />);
+      expect(screen.queryByText('Leaders')).not.toBeInTheDocument();
+    });
   });
 });
