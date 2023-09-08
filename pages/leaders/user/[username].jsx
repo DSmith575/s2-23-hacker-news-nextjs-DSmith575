@@ -9,7 +9,7 @@
  * @return {JSX.Element} Single User Profile
  *
  * @created 04-09-2023
- * @updated 04-09-2023
+ * @updated 08-09-2023
  */
 
 import MetaTag from '@/components/metaTag/metaTag.jsx';
@@ -27,8 +27,7 @@ const SingleStory = ({ story }) => {
 
 export const getServerSideProps = async (context) => {
   try {
-    const URL_PARAM = 1;
-    const id = context.params.id[URL_PARAM];
+    const id = context.params.username;
     const story = await GetStory(`user/${id}.json?`);
 
     return {

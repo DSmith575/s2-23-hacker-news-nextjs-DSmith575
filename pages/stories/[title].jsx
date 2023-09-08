@@ -10,7 +10,7 @@
  * @return {JSX.Element} - Component containing Grid list of stories
  *
  * @created 04-09-2023
- * @updated 04-09-2023
+ * @updated 08-09-2023
  */
 
 import GetStories from '@/utils/getApi/getStories.js';
@@ -21,7 +21,7 @@ const Stories = ({ title, stories }) => {
   return (
     <>
       <MetaTag pageTitle={title} />
-      <Grid story={stories} refPage={title} />
+      <Grid story={stories} subPage={'post'} />
     </>
   );
 };

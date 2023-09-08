@@ -5,12 +5,11 @@
  * @author Deacon Smith
  *
  * @param {Object} story - Object of single story data
- * @param {Number} URL_PARAM - getting the correct value for context
  *
  * @return {JSX.Element} selected story
  *
  * @created 04-09-2023
- * @updated 04-09-2023
+ * @updated 08-09-2023
  */
 
 import MetaTag from '@/components/metaTag/metaTag.jsx';
@@ -27,9 +26,9 @@ const SingleStory = ({ story }) => {
 };
 
 export const getServerSideProps = async (context) => {
+  console.log(context);
   try {
-    const URL_PARAM = 1;
-    const id = context.params.id[URL_PARAM];
+    const id = context.params.id;
     const story = await GetStory(`item/${id}.json?`);
     return {
       props: {
