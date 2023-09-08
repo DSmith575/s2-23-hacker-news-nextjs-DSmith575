@@ -69,16 +69,15 @@ to required stories
             </div>
           )}
         </div>
-      </div>
-
-      {/* If clicked is true, show the Drop down menu 
+        {/* If clicked is true, show the Drop down menu 
       This also contains a toggleDropDown to close the navList when a route is clicked
       */}
-      {clicked && (
-        <div onClick={toggleDropDown}>
-          <NavList isDropDown={true} />
-        </div>
-      )}
+        {clicked && (
+          <div onClick={toggleDropDown}>
+            <NavList isDropDown={true} />
+          </div>
+        )}
+      </div>
     </>
   );
 };
