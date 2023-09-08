@@ -8,7 +8,7 @@
  * @return {JSX.Element} - Component containing Grid list of leaders
  *
  * @created 04-09-2023
- * @updated 04-09-2023
+ * @updated 08-09-2023
  */
 
 import MetaTag from '@/components/metaTag/metaTag.jsx';
@@ -19,13 +19,14 @@ const LeaderStories = ({ leaders }) => {
   return (
     <>
       <MetaTag pageTitle={leaders} />
-      <Grid story={LEADERLIST} refPage={leaders} />
+      <Grid story={LEADERLIST} refPage={leaders} subPage={'user'} />
     </>
   );
 };
 
 export const getServerSideProps = (context) => {
-  const leaders = context.params.title;
+  console.log(context);
+  const leaders = context.params.leaders;
 
   return {
     props: {

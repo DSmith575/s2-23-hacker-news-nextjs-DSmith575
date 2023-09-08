@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Leaders from '@/pages/leaders/[title].jsx';
+import Leaders from '@/pages/leaders/[leaders].jsx';
 
 describe('Leader page grid', () => {
   describe('rendering', () => {
