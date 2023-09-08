@@ -15,6 +15,7 @@
 import DOMPurify from 'isomorphic-dompurify';
 import { decode } from 'he';
 
+// Decodes HTML and also sanitizes in case of XSS
 export const decodeSanitize = (text) => {
   const decodeHTML = decode(text);
   return { __html: DOMPurify.sanitize(decodeHTML) };

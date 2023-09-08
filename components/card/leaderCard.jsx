@@ -39,7 +39,7 @@ const LeaderCard = ({ user }) => {
           {user.about && (
             <>
               <h1 className={'font-bold mt-5 break-words'}>About</h1>
-              <li dangerouslySetInnerHTML={decodeSanitize(user.about)}></li>
+              <li dangerouslySetInnerHTML={decodeSanitize(user.about)}/>
             </>
           )}
         </ul>

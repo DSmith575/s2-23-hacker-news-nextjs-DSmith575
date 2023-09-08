@@ -6,3 +6,10 @@ body {
   background-color: #f7f3e3;
   list-style-type: none;
 }
+
+/* text-wrap displays unknown, but still wraps text */
+/* code - is for the returned html from decoding/sanitizing
+*/
+code {
+  text-wrap: wrap;
+}
