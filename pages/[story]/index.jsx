@@ -27,8 +27,9 @@ const Stories = ({ title, stories }) => {
 };
 
 export const getServerSideProps = async (context) => {
+  console.log(context)
   try {
-    const title = context.params.title;
+    const title = context.params.story;
     const stories = await GetStories(`${title}/.json?`);
 
     return {

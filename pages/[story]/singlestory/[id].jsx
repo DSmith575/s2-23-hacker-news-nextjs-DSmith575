@@ -27,9 +27,10 @@ const SingleStory = ({ story }) => {
 };
 
 export const getServerSideProps = async (context) => {
+  console.log(context)
   try {
     const URL_PARAM = 1;
-    const id = context.params.id[URL_PARAM];
+    const id = context.params.id;
     const story = await GetStory(`item/${id}.json?`);
     return {
       props: {

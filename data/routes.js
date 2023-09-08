@@ -29,7 +29,7 @@ export const ROUTES = [
     hover: true,
   },
   {
-    route: '/story/askstories',
+    route: '/askstories',
     text: 'Ask Stories',
     color: 'text-sky-400',
     hover: true,
