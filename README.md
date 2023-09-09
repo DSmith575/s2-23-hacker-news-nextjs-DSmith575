@@ -110,8 +110,10 @@ As the Leader section is hard coded, some users may no longer appear in the top 
 
 ## Other Issues <a name="othIss"/>
 [Original way I created my slug pages](https://github.com/otago-polytechnic-bit-courses/assessment-2-react-application-DSmith575/tree/original-page-routing)  
-![Screenshot 2023-09-09 231839](https://github.com/otago-polytechnic-bit-courses/assessment-2-react-application-DSmith575/assets/105030622/37518605-1f18-45c6-b9ae-a2c235212b8a)
+![Original](https://github.com/otago-polytechnic-bit-courses/assessment-2-react-application-DSmith575/assets/105030622/37518605-1f18-45c6-b9ae-a2c235212b8a)
 
 This way worked fine locally on `dev` and locally using `build` `start`  
 But when deployed on Vercel, the catch-all [...id] slugs would all return a 404 page not found.  
-Due to not finding any information as to why it wouldn't work on Vercel, I opted to trying out a different folder structure which works.
+Due to not finding any information as to why it wouldn't work on Vercel,  
+and still not receiving a reply from Vercel support.  
+I opted to trying out a different folder structure which works.
