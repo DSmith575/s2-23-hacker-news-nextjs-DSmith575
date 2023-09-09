@@ -116,4 +116,6 @@ This way worked fine locally on `dev` and locally using `build` `start`
 But when deployed on Vercel, the catch-all [...id] slugs would all return a 404 page not found.  
 Due to not finding any information as to why it wouldn't work on Vercel,  
 and still not receiving a reply from Vercel support.  
-I opted to trying out a different folder structure which works.
+I opted to trying out a different folder structure which works.  
+![Current](https://github.com/otago-polytechnic-bit-courses/assessment-2-react-application-DSmith575/assets/105030622/5d5446c7-1c58-455c-9dd1-f489b3d99d38)
+
