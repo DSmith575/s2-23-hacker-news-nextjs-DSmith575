@@ -37,5 +37,5 @@ export const LEADERLIST = [
   { title: 'ChuckMcM', id: 'ChuckMcM' },
   { title: 'zdw', id: 'zdw' },
   { title: 'luu', id: 'luu' },
-  { title: 'pjmlp', id: 'pjmlp' },
+  { title: 'TeMPOraL', id: 'TeMPOraL' },
 ];
