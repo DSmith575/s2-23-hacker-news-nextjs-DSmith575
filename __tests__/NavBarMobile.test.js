@@ -3,47 +3,68 @@ import NavDropDown from '@/components/navigation/navDropDown.jsx';
 
 describe('NavBar', () => {
   describe('Rendering', () => {
-    it('should click hamburg Dropdown and display 6 routes', () => {
+    it('should click hamburg Dropdown and display 6 list item routes', () => {
       render(<NavDropDown />);
 
-      const hamburgerIcon = screen.getByTitle('Hamburger Icon');
+      const hamburgerIcon = screen.getByTitle('Icon-Hamburger');
       expect(hamburgerIcon).toBeInTheDocument();
       fireEvent.click(hamburgerIcon);
-      const routes = screen.getAllByRole('link');
+      const routes = screen.getAllByRole('listitem');
       expect(routes).toHaveLength(6);
     });
 
-    it('should click hamburger icon, then click x icon', () => {
+    it('should only have 2 routes (home/leaders icons) when the hamburger is not clicked', () => {
       render(<NavDropDown />);
+      const routes = screen.getAllByRole('link');
+      expect(routes).toHaveLength(2);
+    });
 
-      const hamburgerIcon = screen.getByTitle('Hamburger Icon');
+    it('should have 8 links when the hamburger is open', () => {
+      render(<NavDropDown />);
+      const hamburgerIcon = screen.getByTitle('Icon-Hamburger');
       expect(hamburgerIcon).toBeInTheDocument();
-
       fireEvent.click(hamburgerIcon);
-
-      const homeLink = screen.getByText('Show Stories');
-      expect(homeLink).toBeInTheDocument();
-
-      const crossIcon = screen.getByTitle('Cross Icon');
-      expect(crossIcon).toBeInTheDocument();
-      fireEvent.click(crossIcon);
-
-      expect(homeLink).not.toBeInTheDocument();
+      const routes = screen.getAllByRole('link');
+      expect(routes).toHaveLength(8);
     });
 
     it('should click hamburger icon and then test if icon is not there once clicked', () => {
       render(<NavDropDown />);
 
-      const hamburg = screen.getByTitle('Hamburger Icon');
+      const hamburg = screen.getByTitle('Icon-Hamburger');
       expect(hamburg).toBeInTheDocument();
       fireEvent.click(hamburg);
       expect(hamburg).not.toBeInTheDocument();
     });
 
-    it('should click hamburg Dropdown and display routes', () => {
+    it('should click hamburger icon, check for a route, then click x icon', () => {
       render(<NavDropDown />);
 
-      const hamburgerIcon = screen.getByTitle('Hamburger Icon');
+      const hamburgerIcon = screen.getByTitle('Icon-Hamburger');
+      expect(hamburgerIcon).toBeInTheDocument();
+
+      fireEvent.click(hamburgerIcon);
+
+      const showStories = screen.getByText('Show Stories');
+      expect(showStories).toBeInTheDocument();
+
+      const crossIcon = screen.getByTitle('Icon-Cross');
+      expect(crossIcon).toBeInTheDocument();
+      fireEvent.click(crossIcon);
+
+      expect(showStories).not.toBeInTheDocument();
+    });
+
+    it('should not find cross icon on initial render', () => {
+      render(<NavDropDown />);
+
+      expect(screen.queryByTitle('Icon-Cross')).not.toBeInTheDocument();
+    });
+
+    it('should click hamburg Dropdown and find Ask Stories', () => {
+      render(<NavDropDown />);
+
+      const hamburgerIcon = screen.getByTitle('Icon-Hamburger');
       expect(hamburgerIcon).toBeInTheDocument();
       fireEvent.click(hamburgerIcon);
       expect(screen.getByText('Ask Stories')).toBeInTheDocument();

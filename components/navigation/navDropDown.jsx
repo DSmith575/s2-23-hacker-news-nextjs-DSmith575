@@ -13,7 +13,7 @@
  * @returns {JSX.Element} - Component for dropdown routing links
  *
  * @created 27-08-2023
- * @updated 08-09-2023
+ * @updated 09-09-2023
  */
 
 import NavList from '@/components/navigation/navList.jsx';
@@ -69,7 +69,7 @@ to required stories
             </div>
           )}
         </div>
-        {/* If clicked is true, show the Drop down menu 
+        {/* If clicked is true, show the Drop down menu
       This also contains a toggleDropDown to close the navList when a route is clicked
       */}
         {clicked && (

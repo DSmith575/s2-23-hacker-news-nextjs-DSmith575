@@ -30,6 +30,7 @@ const Grid = ({ story, subPage }) => {
                   className={
                     'text-center text-sm break-all group-hover:font-bold group-hover:text-greenBlueColor group-hover:uppercase hover:ease-linear group-hover:duration-100'
                   }
+                  // Example: href= stories/post/id
                   href={`./${subPage}/${value.id}`}>
                   {value.title}
                 </Link>

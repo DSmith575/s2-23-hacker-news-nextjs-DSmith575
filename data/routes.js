@@ -4,9 +4,9 @@
  *
  * @author Deacon Smith
  *
- * @param {route} - page route
- * @param {text} - What is displayed on the Link
- * @param {color} - Font color
+ * @param {route} - page route /[folder name]/[title]
+ * @param {text} - What is displayed on the Link Button
+ * @param {color} - Font color, this is here because of the Hacker News NavButton being a different color
  * @param {hover} - If button has a hover effect (This is purely because the "Hacker News" logo button does not need a hover effect)
  *
  * @returns {Array} - Array of routes

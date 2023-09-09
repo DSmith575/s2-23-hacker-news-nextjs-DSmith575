@@ -14,6 +14,9 @@
  * @updated 04-09-2023
  */
 
+// Hardcoded values for the Leader section
+// Doubling up on the same value for title and id due to how I have written the grid map
+
 export const LEADERLIST = [
   { title: 'tptacek', id: 'tptacek' },
   { title: 'jacquesm', id: 'jacquesm' },
@@ -34,5 +37,5 @@ export const LEADERLIST = [
   { title: 'ChuckMcM', id: 'ChuckMcM' },
   { title: 'zdw', id: 'zdw' },
   { title: 'luu', id: 'luu' },
-  { title: 'TeMPOral', id: 'TeMPOral' },
+  { title: 'pjmlp', id: 'pjmlp' },
 ];

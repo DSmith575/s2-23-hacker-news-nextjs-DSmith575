@@ -1,6 +1,6 @@
 /**
  * @description slug page for leader list
- * @file [title].jsx
+ * @file [leaders].jsx
  *
  * @author Deacon Smith
  *
@@ -22,17 +22,6 @@ const LeaderStories = ({ leaders }) => {
       <Grid story={LEADERLIST} refPage={leaders} subPage={'user'} />
     </>
   );
-};
-
-export const getServerSideProps = (context) => {
-  console.log(context);
-  const leaders = context.params.leaders;
-
-  return {
-    props: {
-      leaders: leaders,
-    },
-  };
 };
 
 export default LeaderStories;

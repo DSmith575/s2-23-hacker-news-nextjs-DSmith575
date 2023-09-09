@@ -1,6 +1,6 @@
 /**
  * @description ID slug page for user profile
- * @file [...id].jsx
+ * @file [username].jsx
  *
  * @author Deacon Smith
  *
@@ -28,8 +28,8 @@ const SingleStory = ({ story }) => {
 export const getServerSideProps = async (context) => {
   try {
     const id = context.params.username;
-    const story = await GetStory(`user/${id}.json?`);
 
+    const story = await GetStory(`user/${id}.json?`);
     return {
       props: {
         story: story,
