@@ -7,7 +7,7 @@
  * @returns {JSX.Element} - Grid Layout
  *
  * @created 27-08-2023
- * @updated 04-09-2023
+ * @updated 11-09-2023
  */
 
 import Link from 'next/link';

@@ -12,7 +12,7 @@
  */
 
 import MetaTag from '@/components/metaTag/metaTag.jsx';
-import Grid from '@/components/storyLayout/grid.jsx';
+import Grid from '@/components/grid/grid.jsx';
 import { LEADERLIST } from '@/data/leaders.js';
 
 const LeaderStories = ({ leaders }) => {

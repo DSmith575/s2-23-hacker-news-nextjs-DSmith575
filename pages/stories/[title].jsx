@@ -15,7 +15,7 @@
 
 import GetStories from '@/utils/getApi/getStories.js';
 import MetaTag from '@/components/metaTag/metaTag.jsx';
-import Grid from '@/components/storyLayout/grid.jsx';
+import Grid from '@/components/grid/grid.jsx';
 
 const Stories = ({ title, stories }) => {
   return (
