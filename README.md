@@ -43,12 +43,12 @@ Check env.example for correct env variable names
 Add .env to rootDir  
 in .env add
 ```js
-NEXT_PUBLIC_HACKER_NEWS_URL="https://hacker-news.firebaseio.com/v0/"
+NEXT_PUBLIC_HACKER_NEWS_URL=https://hacker-news.firebaseio.com/v0/
 ```
 OR
 ```bash
 touch .env
-echo "NEXT_PUBLIC_HACKER_NEWS_URL=\"https://hacker-news.firebaseio.com/v0/\"" > .env
+echo "NEXT_PUBLIC_HACKER_NEWS_URL=https://hacker-news.firebaseio.com/v0/" > .env
 ```
 
 ## Running Dev
